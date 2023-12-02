@@ -1,0 +1,10 @@
+{
+    "go.coverOnSave": true,
+    "go.coverOnSingleTest": true,
+    "go.coverOnSingleTestFile": true,
+    "go.coverShowCounts": true,
+    "go.coverageDecorator": {
+        "type": "gutter",
+        "uncoveredGutterStyle": "blockred"
+    }
+}
