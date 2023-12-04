@@ -4,12 +4,6 @@ on:
   push:
     branches:
       - 'main'
-# env:
-#   IMAGE_NAME: ${{ github.repository }}
-
-# defaults:
-#   run:
-#     working-directory: app
 
 jobs:
   docker:
