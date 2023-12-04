@@ -19,3 +19,9 @@
 
 # Go workspace file
 go.work
+
+# Go binary
+app/app
+
+# Go coverage report
+app/api/*.out
