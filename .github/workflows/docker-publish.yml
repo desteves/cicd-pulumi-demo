@@ -1,4 +1,4 @@
-name: build-push-registry
+name: build-push-registry-gcp-iac-run
 
 on:
   push:
@@ -32,3 +32,14 @@ jobs:
           context: .
           push: true
           tags: nullstring/cicd-pulumi-demo:latest
+  up:
+    name: pulumi-up
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pulumi/actions@v4
+        with:
+          command: up
+          stack-name: diana-pulumi-corp/cicd-demo
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
