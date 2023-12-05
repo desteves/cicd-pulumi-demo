@@ -40,6 +40,6 @@ jobs:
       - uses: pulumi/actions@v4
         with:
           command: up
-          stack-name: diana-pulumi-corp/cicd-demo
+          stack-name: diana-pulumi-corp/infra/cicd-demo
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
