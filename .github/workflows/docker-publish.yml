@@ -34,6 +34,7 @@ jobs:
           tags: nullstring/cicd-pulumi-demo:latest
   up:
     name: pulumi-up
+    needs: docker
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -44,4 +45,4 @@ jobs:
           work-dir: ./infra
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_ACCOUNT }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
