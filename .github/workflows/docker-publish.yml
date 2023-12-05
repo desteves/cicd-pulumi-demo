@@ -41,5 +41,7 @@ jobs:
         with:
           command: up
           stack-name: diana-pulumi-corp/infra/cicd-demo
+          work-dir: ./infra
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GCLOUD_SERVICE_ACCOUNT }}
