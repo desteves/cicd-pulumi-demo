@@ -2,7 +2,7 @@ module infra
 
 go 1.21
 
-toolchain go1.21.4
+// toolchain go1.21.4
 
 require (
 	github.com/pulumi/pulumi-gcp/sdk/v7 v7.2.1
