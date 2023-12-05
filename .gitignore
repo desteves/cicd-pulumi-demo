@@ -22,6 +22,11 @@ go.work
 
 # Go binary
 app/app
+app/hello-world-app
 
 # Go coverage report
 app/api/*.out
+
+# Infra
+infra/infra
+infra/secrets
